@@ -1,0 +1,57 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  /* 환경 설정:
+    - "browser": 브라우저 환경 지원.
+    - "node": Node.js 환경 지원.
+    - "es2021": 최신 ES2021 문법 사용 가능.
+  */
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  /* 확장 설정:
+    - "eslint:recommended": ESLint 기본 권장 규칙 활성화.
+    - "plugin:react/recommended": React 관련 권장 규칙 활성화.
+    - "plugin:prettier/recommended": Prettier와 ESLint 간 충돌 방지 및 코드 스타일 관리.
+    - "next/core-web-vitals": Next.js의 Core Web Vitals 성능 규칙 활성화.
+    - "next/typescript": TypeScript 관련 규칙 활성화.
+  */
+
+  "plugins": ["react", "react-hooks"],
+  /* 플러그인 설정:
+    - "react": React 관련 규칙 활성화.
+    - "react-hooks": React Hooks 사용 관련 규칙 활성화.
+  */
+
+  "rules": {
+    "no-unused-vars": "warn",
+    "eqeqeq": "error",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  /* 규칙 설정:
+    - "no-unused-vars": 사용하지 않는 변수 경고 (TypeScript에서도 동일한 기능 제공).
+    - "eqeqeq": 엄격한 동등 연산자(===) 사용을 강제.
+    - "react/react-in-jsx-scope": Next.js의 React 17 이상에서는 React import가 불필요하므로 비활성화.
+    - "react-hooks/rules-of-hooks": React Hooks 규칙 강제.
+    - "react-hooks/exhaustive-deps": useEffect 의존성 배열 검사.
+  */
+
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+  /* React 설정:
+    - "version": React의 버전을 자동으로 감지하여 적절한 규칙을 적용.
+  */
+}
