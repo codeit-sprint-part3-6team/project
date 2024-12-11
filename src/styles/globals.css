@@ -1,9 +1,13 @@
+:root {
+  --black: #000;
+}
+
 body {
-  background-color: #000;
+  background-color: var(--black);
   font-size: 50px;
   color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-} 
+}
