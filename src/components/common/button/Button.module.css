@@ -6,7 +6,7 @@
   font-size: 14px;
   font-weight: var(--medium);
   line-height: 24px;
-  color: var(--purpleHeart);
+  color: var(--violet);
   cursor: pointer;
 }
 
@@ -41,7 +41,7 @@
   font-size: 16px;
   font-weight: var(--semiBold);
   line-height: 26px;
-  color: var(--topaz);
+  color: var(--gray);
 }
 
 .modal.single {
@@ -67,7 +67,11 @@
   font-size: 18px;
   font-weight: var(--bold);
   line-height: 26px;
-  color: var(--shipGray);
+  color: var(--black-medium);
+}
+
+.column .button_content {
+  gap: 12px;
 }
 
 .todo {
@@ -80,7 +84,7 @@
 .dashboard {
   border-radius: 8px;
   line-height: 26px;
-  color: var(--shipGray);
+  color: var(--black-medium);
 }
 
 .dashboard.add,
@@ -90,6 +94,10 @@
   height: 70px;
   font-size: 16px;
   font-weight: var(--semiBold);
+}
+
+.dashboard.add .button_content {
+  gap: 12px;
 }
 
 .dashboard.delete {
@@ -114,26 +122,29 @@
 }
 
 .border {
-  border: 1px solid var(--alto);
+  border: 1px solid var(--gray-medium);
 }
 
 .colored {
-  background-color: var(--purpleHeart);
+  background-color: var(--violet);
   color: var(--white);
 }
 
 .button:disabled {
-  background-color: var(--chateauGray);
+  background-color: var(--gray-dark);
   cursor: not-allowed;
 }
 
 .icon_plus {
   display: block;
-  margin-left: 12px;
+  width: 22px;
+  height: 22px;
 }
 
 .icon_crown {
   display: block;
+  width: 20px;
+  height: 16px;
   margin-left: 8px;
 }
 
@@ -145,23 +156,23 @@
 }
 
 .badge.green {
-  background-color: var(--mantis);
+  background-color: var(--green);
 }
 
 .badge.purple {
-  background-color: var(--electricViolet);
+  background-color: var(--purple);
 }
 
 .badge.orange {
-  background-color: var(--webOrange);
+  background-color: var(--orange);
 }
 
 .badge.blue {
-  background-color: var(--portage);
+  background-color: var(--blue);
 }
 
 .badge.pink {
-  background-color: var(--lavender);
+  background-color: var(--pink);
 }
 
 @media screen and (max-width: 1199px) {

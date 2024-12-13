@@ -1,5 +1,7 @@
 import clsx from 'clsx';
 import { CDSButtonProps, types } from '@/type/button';
+import PlusIcon from 'public/ic/ic_chip.svg';
+import CrownIcon from 'public/ic/ic_crown.svg';
 import styles from './Button.module.css';
 import Button from './Button';
 
@@ -23,7 +25,7 @@ function CDSButton({
    */
   const renderPlusIcon = () =>
     ['column', 'todo', 'dashboard_add'].includes(btnType) && (
-      <img className={styles.icon_plus} src="ic/ic_chip.svg" alt="icon" />
+      <PlusIcon className={styles.icon_plus} />
     );
 
   /**
@@ -33,9 +35,7 @@ function CDSButton({
    */
   const renderOwnerIcon = () =>
     btnType === 'dashboard_card' &&
-    owner && (
-      <img className={styles.icon_crown} src="ic/ic_crown.svg" alt="ic_crown" />
-    );
+    owner && <CrownIcon className={styles.icon_crown} />;
 
   /**
    * renderBadge: 대시보드 카드 유형에서 색상 배지 렌더링
